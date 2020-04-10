@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+	* locale.xml
+	*
+	* Copyright (c) 2020 Matias Gabriel Antola
+	* Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+	*
+	* Localization strings for the en_US locale.
+	*
+	-->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.blocks.iMV.displayName">Indexing Metadata Viewer</message>
+	<message key="plugins.blocks.iMV.description">This plugin allows you to view the article metadata.</message>
+	<message key="plugins.blocks.iMV.title">Metadata Viewer</message>
+</locale>

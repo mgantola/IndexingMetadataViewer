@@ -2,8 +2,8 @@
 <!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
 <version>
 	<application>IndexingMetadataViewer</application>
-	<type>plugins.generic</type>
-	<release>0.1.0.0</release>
+	<type>plugins.blocks</type>
+	<release>0.0.2</release>
 	<date>2020-04-10</date>
 	<lazy-load>1</lazy-load>
 	<class>IndexingMetadataViewerPlugin</class>

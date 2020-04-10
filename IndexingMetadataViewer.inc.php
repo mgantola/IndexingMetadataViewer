@@ -1,5 +1,7 @@
 <?php
+
 import('lib.pkp.classes.plugins.BlockPlugin');
+
 class IndexingMetadataViewer extends BlockPlugin {
 	public function register($category, $path, $mainContextId = NULL) {
 
@@ -20,7 +22,7 @@ class IndexingMetadataViewer extends BlockPlugin {
 	 * install, enable and disable plugins.
 	 */
 	public function getDisplayName() {
-		return 'Indexing Metadata Viewer';
+		return __('plugins.blocks.iMV.title');
 	}
 
 	/**
@@ -30,6 +32,6 @@ class IndexingMetadataViewer extends BlockPlugin {
 	 * install, enable and disable plugins.
 	 */
 	public function getDescription() {
-		return 'This plugin is an example created for a tutorial on how to create a plugin.';
+		return __('plugins.blocks.iMV.description');
 	}
 }

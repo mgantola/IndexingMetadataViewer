@@ -1,4 +1,3 @@
-  
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
@@ -13,7 +12,8 @@
 	-->
  
 <locale name="es_AR" full_name="Español (Argentina)">
-	<message key="plugins.block.iMV.displayName">Visor de Metadatos</message>
-	<message key="plugins.block.iMV.description">Este plugin permite ver los metadatos del artículo.</message>
-	<message key="plugins.block.iMV.title">Visor de Metadatos Indizados</message>
+	<message key="plugins.blocks.iMV.displayName">Visor de Metadatos Indizados</message>
+	<message key="plugins.blocks.iMV.description">Este plugin permite ver los metadatos del artículo.</message>
+	<message key="plugins.blocks.iMV.title">Visor de Metadatos</message>
 </locale>
+
