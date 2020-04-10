@@ -1,0 +1,19 @@
+  
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+	* locale.xml
+	*
+	* Copyright (c) 2020 Matias Gabriel Antola
+	* Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+	*
+	* Localization strings for the es_AR locale.
+	*
+	-->
+ 
+<locale name="es_AR" full_name="Español (Argentina)">
+	<message key="plugins.block.iMV.displayName">Visor de Metadatos</message>
+	<message key="plugins.block.iMV.description">Este plugin permite ver los metadatos del artículo.</message>
+	<message key="plugins.block.iMV.title">Visor de Metadatos Indizados</message>
+</locale>
