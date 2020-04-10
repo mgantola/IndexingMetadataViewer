@@ -12,7 +12,7 @@
 	-->
  
 <locale name="en_US" full_name="U.S. English">
-	<message key="plugins.blocks.iMV.displayName">Indexing Metadata Viewer</message>
-	<message key="plugins.blocks.iMV.description">This plugin allows you to view the article metadata.</message>
-	<message key="plugins.blocks.iMV.title">Metadata Viewer</message>
+	<message key="plugins.generic.iMV.displayName">Indexing Metadata Viewer</message>
+	<message key="plugins.generic.iMV.description">This plugin allows you to view the article metadata.</message>
+	<message key="plugins.generic.iMV.title">Metadata Viewer</message>
 </locale>

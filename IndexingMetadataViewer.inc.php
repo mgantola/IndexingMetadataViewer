@@ -1,6 +1,6 @@
 <?php
 
-import('lib.pkp.classes.plugins.BlockPlugin');
+import('lib.pkp.classes.plugins.GenericPlugin');
 
 class IndexingMetadataViewer extends GenericPlugin  {
 	/**
@@ -26,7 +26,7 @@ class IndexingMetadataViewer extends GenericPlugin  {
 	 * install, enable and disable plugins.
 	 */
 	public function getDisplayName() {
-		return __('plugins.blocks.iMV.title');
+		return __('plugins.generic.iMV.title');
 	}
 
 	/**
@@ -36,7 +36,7 @@ class IndexingMetadataViewer extends GenericPlugin  {
 	 * install, enable and disable plugins.
 	 */
 	public function getDescription() {
-		return __('plugins.blocks.iMV.description');
+		return __('plugins.generic.iMV.description');
 	}
 	
 	    function callback($hookName, $args) { 

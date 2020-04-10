@@ -12,8 +12,8 @@
 	-->
  
 <locale name="es_AR" full_name="Español (Argentina)">
-	<message key="plugins.blocks.iMV.displayName">Visor de Metadatos Indizados</message>
-	<message key="plugins.blocks.iMV.description">Este plugin permite ver los metadatos del artículo.</message>
-	<message key="plugins.blocks.iMV.title">Visor de Metadatos</message>
+	<message key="plugins.generic.iMV.displayName">Visor de Metadatos Indizados</message>
+	<message key="plugins.generic.iMV.description">Este plugin permite ver los metadatos del artículo.</message>
+	<message key="plugins.generic.iMV.title">Visor de Metadatos</message>
 </locale>
 
