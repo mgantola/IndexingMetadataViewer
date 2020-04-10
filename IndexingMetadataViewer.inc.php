@@ -2,18 +2,22 @@
 
 import('lib.pkp.classes.plugins.BlockPlugin');
 
-class IndexingMetadataViewer extends BlockPlugin {
-	public function register($category, $path, $mainContextId = NULL) {
+class IndexingMetadataViewer extends GenericPlugin  {
+	/**
+	 * @copydoc Plugin::register()
+	 */
+    function register($category, $path) { 
+        if (parent::register($category, $path)) { 
+            HookRegistry::register( 
+                'Templates::Manager::Index::ManagementPages', 
+                array(&$this, 'callback') 
+            ); 
+            return true; 
+        } 
+        return false; 
+    } 
 
-		// Register the plugin even when it is not enabled
-		$success = parent::register($category, $path);
 
-		if ($success && $this->getEnabled()) {
-			// Do something when the plugin is enabled
-		}
-
-		return $success;
-	}
 
 	/**
 	 * Provide a name for this plugin
@@ -34,4 +38,12 @@ class IndexingMetadataViewer extends BlockPlugin {
 	public function getDescription() {
 		return __('plugins.blocks.iMV.description');
 	}
+	
+	    function callback($hookName, $args) { 
+        $params =& $args[0]; 
+        $smarty =& $args[1]; 
+        $output =& $args[2]; 
+        $output = '<li>&#187; <a href=”http://pkp.sfu.ca”>My New Link</a></li>'; 
+        return false; 
+    } 
 }
