@@ -6,15 +6,18 @@ class IndexingMetadataViewer extends GenericPlugin  {
 	/**
 	 * @copydoc Plugin::register()
 	 */
-    function register($category, $path) { 
+    function register($category, $path, $mainContextId = NULL) { 
         if (parent::register($category, $path)) { 
             HookRegistry::register( 
                 'Templates::Manager::Index::ManagementPages', 
                 array(&$this, 'callback') 
             ); 
-            return true; 
         } 
-        return false; 
+		if ($success && $this->getEnabled()) {
+			// Do something when the plugin is enabled
+		}
+
+		return $success;
     } 
 
 
