@@ -8,7 +8,7 @@ class IndexingMetadataViewer extends GenericPlugin  {
 	 */
     public function register($category, $path, $mainContextId = NULL) { 
 		// Register the plugin even when it is not enabled
-		$success = parent::register($category, $path);
+		$success = parent::register($category, $path, $mainContextId);
 
 		if ($success && $this->getEnabled()) {
 			// Do something when the plugin is enabled
