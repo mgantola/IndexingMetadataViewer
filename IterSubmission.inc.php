@@ -48,19 +48,15 @@ class IterSubmission extends GenericPlugin {
 	}	
 
 	function getName() {
-		return 'IterSubmission';
+		return 'ExamplePlugin';
 	}
 
 	function getDisplayName() {
-		return __('plugins.generic.iterSubmissions.displayName');
-	}
-
-	function getCitationFormatName() {
-		return __('plugins.generic.iterSubmissions.citationFormatName');
+		return 'Example Plugin';
 	}
 
 	function getDescription() {
-		return __('plugins.generic.iterSubmissions.description');
+		return 'A description of this plugin';
 	}	
 
 	/**
