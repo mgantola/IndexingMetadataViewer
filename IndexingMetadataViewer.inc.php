@@ -18,7 +18,7 @@ import('lib.pkp.classes.plugins.GenericPlugin');
 // import('lib.pkp.classes.submission.SubmissionMetadataFormImplementation');
 // import('classes.submission.SubmissionMetadataFormImplementation');
 
-class IterSubmission extends GenericPlugin {
+class IndexingMetadataViewer extends GenericPlugin {
 	/**
 	 * Constructor.
 	 * @param $parentForm Form A form that can use this form.
