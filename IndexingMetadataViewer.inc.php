@@ -30,10 +30,13 @@ class IndexingMetadataViewer extends GenericPlugin {
 	}
 	*/
 	
-	function register($category, $path) {
+	function register($category, $path, $mainContextId = NULL) {
 		$success = parent::register($category, $path);
 		if ($success && $this->getEnabled()) {
-			//
+			HookRegistry::register( 
+                'Templates::Manager::Index::ManagementPages', 
+                array(&$this, 'callback') 
+            );
 		}
 		return $success;	
 	}
