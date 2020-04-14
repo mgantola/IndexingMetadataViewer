@@ -16,7 +16,6 @@
 	<type>plugins.generic</type>
 	<release>0.1.0</release>
 	<date>2020-04-15<date>
-	<lazy-load>0</lazy-load>
-	<sitewide>1</sitewide>
+	<lazy-load>|</lazy-load>
 	<class>IndexingMetadataViewer</class>
 </version>
