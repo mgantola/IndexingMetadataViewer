@@ -20,7 +20,7 @@ class IndexingMetadataViewer extends GenericPlugin {
 	 * install, enable and disable plugins.
 	 */
 	public function getDisplayName() {
-		return 'Indexing Metadata Viewer';
+		return __('plugins.generic.iMV.displayName');;
 	}
 
 	/**
@@ -30,6 +30,6 @@ class IndexingMetadataViewer extends GenericPlugin {
 	 * install, enable and disable plugins.
 	 */
 	public function getDescription() {
-		return 'This plugin is an example created for a tutorial on how to create a plugin.';
+		return __('plugins.generic.iMV.displayName');;
 	}
 }
