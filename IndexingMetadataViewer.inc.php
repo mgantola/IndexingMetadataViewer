@@ -5,9 +5,10 @@ class IndexingMetadataViewer extends GenericPlugin {
 
 		// Register the plugin even when it is not enabled
 		$success = parent::register($category, $path);
-
+				
 		if ($success && $this->getEnabled()) {
-			// Do something when the plugin is enabled
+			HookRegistry::register('ArticleHandler::view',array(&$this, 'callback'));
+
 		}
 
 		return $success;
@@ -30,6 +31,13 @@ class IndexingMetadataViewer extends GenericPlugin {
 	 * install, enable and disable plugins.
 	 */
 	public function getDescription() {
-		return __('plugins.generic.iMV.displayName');;
+		return __('Descripcion');;
 	}
+	
+	    function callback($hookName, $args) { 
+        $params =& $args[0]; 
+        $smarty =& $args[1];         
+        $output = '<li>&#187; <a href=”http://pkp.sfu.ca”>My New Link</a></li>'; 
+        return false; 
+    }
 }
